@@ -36,7 +36,7 @@ May include any or all of the following subjects related to Angular Directives.
 ## Deployment
 
 - Hosted on [Netlify](https://app.netlify.com/) utilizing [GitHub](https://app.netlify.com/)'s Netlify App
-- URL [...](...)
+- URL [https://angular-reactive-form-exercise.netlify.app/](https://angular-reactive-form-exercise.netlify.app/)
 
 ## Authors
 
