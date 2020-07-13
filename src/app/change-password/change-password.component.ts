@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
+import { PasswordValidators } from "../common/validators/password.validators";
 
 @Component({
   selector: "change-password",
@@ -7,9 +8,17 @@ import { FormGroup, FormControl, Validators } from "@angular/forms";
 })
 export class ChangePasswordComponent {
   theForm = new FormGroup({
-    password: new FormControl("", Validators.required),
+    password: new FormControl(
+      "",
+      Validators.required,
+      PasswordValidators.mustBeValid
+    ),
     newPassword: new FormControl("", Validators.required),
-    confirmPassword: new FormControl("", Validators.required),
+    confirmPassword: new FormControl(
+      "",
+      // Validators.required,
+      PasswordValidators.mustMatchNewPassword
+    ),
   });
 
   //FormControl object properties
