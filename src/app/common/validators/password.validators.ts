@@ -17,9 +17,17 @@ export class PasswordValidators {
   }
   static mustMatchNewPassword(
     control: AbstractControl
-  ): ValidationErrors | null {
-    console.log("mustMatchNewPassword:");
-    console.log(control.parent);
-    return null;
+  ): Promise<ValidationErrors | null> {
+    return new Promise((resolve, reject) => {
+      if (
+        (control.value as string) !=
+        (control.parent.value.newPassword as string)
+      ) {
+        resolve({ mustMatchNewPassword: true });
+      } else {
+        resolve(null);
+        // resolve(null);
+      }
+    });
   }
 }
