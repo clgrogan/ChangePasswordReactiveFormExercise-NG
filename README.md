@@ -18,7 +18,7 @@ Angular App that will apply skills learned, specifically in regards to Reactive 
 
 ## Subjects Demonstrated
 
-May include any or all of the following subjects related to Angular Directives.
+May include any or all of the following subjects related to Reactive Forms.
 
 - Building a Bootstrap Form
 - Creating Controls Programmatically
